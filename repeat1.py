@@ -16,16 +16,20 @@ def start_timer():
     start_time = time.time()
     update_time()
 
+# Создаем основное окно
 root = tk.Tk()
 root.title("Секундомер")
 root.geometry("200x100")
 root.configure(bg="lightgreen")
 root.attributes("-topmost", True)
 
+# Создаем метку для отображения времени
 time_label = tk.Label(root, text="00:00", font=("Helvetica", 48), fg="red", bg="lightgreen")
 time_label.pack(pady=20)
 
+# Создаем кнопку для запуска таймера
 start_button = tk.Button(root, text="Старт", command=start_timer)
 start_button.pack(pady=10)
 
+# Запускаем главный цикл обработки событий
 root.mainloop()
