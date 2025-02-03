@@ -13,7 +13,7 @@ def start_timer():
     start_time = time.time()
     update_time()
 
-root = tk.Tk()
+root = tk.Tk()// fhfhhfhfhfhfhfhfhf
 root.title("Секундомер")
 root.geometry("200x100")
 root.configure(bg="lightgreen")
