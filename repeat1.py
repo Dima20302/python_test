@@ -1,6 +1,9 @@
 import tkinter as tk
 import time
 
+# Определяем start_time на уровне модуля
+start_time = 0
+
 def update_time():
     elapsed_time = time.time() - start_time
     minutes = int(elapsed_time // 60)
@@ -13,7 +16,7 @@ def start_timer():
     start_time = time.time()
     update_time()
 
-root = tk.Tk()// fhfhhfhfhfhfhfhfhf
+root = tk.Tk()
 root.title("Секундомер")
 root.geometry("200x100")
 root.configure(bg="lightgreen")
